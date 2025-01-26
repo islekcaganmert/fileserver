@@ -1,0 +1,42 @@
+{
+  "@context": "https://bevyframe.islekcaganmert.me/ns/manifest",
+  "app": {
+    "name": "FileServer",
+    "short_name": "FileServer",
+    "orientation": "any",
+    "version": "1.0.0",
+    "package": "me.islekcaganmert.fileserver",
+    "style": "hereus_ui_4_0",
+    "icon": "/assets/favicon.png",
+    "loginview": "/login.py",
+    "shareview": "/share.py",
+    "offlineview": "/offline.py",
+    "accept_media": [],
+    "database_filename": "app",
+    "allow_multiple_instance": true,
+    "shortcuts": {},
+    "cors": false,
+    "routing": {
+      "/...": "/handler",
+      "/login:handler": "/login.py"
+    },
+    "disable_features": [
+      "PWA"
+    ]
+  },
+  "publishing": {
+    "description": "Simple File Server written in bash",
+    "screenshots": []
+  },
+  "accounts": {
+    "default_network": "hereus.net",
+    "permissions": []
+  },
+  "development": {
+    "host": "0.0.0.0",
+    "port": 3000,
+    "debug": false
+  },
+  "production": null,
+  "requirements": []
+}
