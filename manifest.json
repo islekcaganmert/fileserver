@@ -17,7 +17,7 @@
     "shortcuts": {},
     "cors": false,
     "routing": {
-      "/...": "/handler",
+      "/...": "/handler.sh",
       "/login:handler": "/login.py"
     },
     "disable_features": [
@@ -25,7 +25,7 @@
     ]
   },
   "publishing": {
-    "description": "Simple File Server written in bash",
+    "description": "Simple file server written in bash",
     "screenshots": []
   },
   "accounts": {

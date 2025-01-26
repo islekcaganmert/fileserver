@@ -39,6 +39,6 @@ echo "<html>"
       echo '</div>'
     fi
   echo "</body>"
-  pages/login_form
+  pages/login_form.sh
   bf_widget Widget script --innertext "$(cat pages/index.js)"
 echo "</html>"

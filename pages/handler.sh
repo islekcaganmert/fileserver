@@ -22,7 +22,7 @@ export USERNAME
 export NETWORK
 echo "islekcaganmert-fileserver/1.0 200"
 if [ -f $CWD ]; then
-  pages/serve_file
+  pages/serve_file.sh
   exit
 fi
 if [ -f $CWD/index.html ]; then
@@ -31,6 +31,6 @@ if [ -f $CWD/index.html ]; then
   cat $CWD/index.html
   exit
 fi
-pages/generate_listing
+pages/generate_listing.sh
 echo ""
 
